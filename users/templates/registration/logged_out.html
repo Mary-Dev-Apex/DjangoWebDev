@@ -1,0 +1,15 @@
+<!-- logged_out.html -->
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+    <h1>Logout Successful</h1>
+    <p>You have logged out successfully. See you next time!</p>
+    
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
